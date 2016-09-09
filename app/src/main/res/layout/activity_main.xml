@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvNomes"
+        android:layout_centerHorizontal="true"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/btMenu" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btMenu"
+        android:src="@drawable/botaomenu"
+        android:onClick="chamarMenu"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agenda"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btEditar"
+        android:src="@drawable/botaoeditar"
+        android:onClick="chamarAlterar"
+        android:background="@null"
+        android:layout_toLeftOf="@+id/btExcluir"
+        android:layout_toStartOf="@+id/btExcluir"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btExcluir"
+        android:src="@drawable/botaoexcluir"
+        android:layout_alignTop="@+id/btEditar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:layout_marginRight="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAdicionarContato"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/botaomais"
+        android:onClick="onClickIncluir"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btEditar"
+        android:layout_alignEnd="@+id/btEditar" />
+</RelativeLayout>
